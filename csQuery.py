@@ -1,12 +1,10 @@
 from bs4 import BeautifulSoup
 import urllib.request
-import requests 
 
 url = "http://codeschool.com/users/"
 
 for user in range(2017, 4000000):
   url = url + str(user)
-  html = requests.get(url).text
   page = urllib.request.urlopen(url).read()
   soup = BeautifulSoup(page)
   names = soup.find('h1').contents 
