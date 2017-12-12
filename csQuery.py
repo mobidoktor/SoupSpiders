@@ -39,4 +39,3 @@ for user in range(2017, 4000000):
       f = open("profile.txt", "a")
       f.write(writeString)
       f.close()
-  url = "http://codeschool.com/users/"
